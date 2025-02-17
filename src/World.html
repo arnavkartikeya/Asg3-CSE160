@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+
+    <p id="numdot">XXX</p>
+
+    <p id="timer">Time: 0.00</p>
+    <p id="winText"></p>
+    <button id="resetBtn">Reset Game</button>    
+
+    <p>
+    Camera Angle <input type="range" min="-90" max="90" value="5" class="slider" id="angleSlide">
+
+    <p>
+    Vertical Camera Angle <input type="range" min="-90" max="90" value="5" class="slider" id="verticalSlide">
+    <hr>
+    <div style="margin-top: 20px; font-family: Arial, sans-serif;">
+        <p>Name: Arnav Kartikeya</p>
+        <p>Email: akartike@ucsc.edu</p>
+        <p>Assignment: Lab 03</p>
+        <p>3d world with a snake, and a randomly generated forest</p>
+        <p>The game is simple, the snake will spawn randomly and you have to find the snake and travel towards it. Once you do, the timer stops.</p>
+        <p>You can reset the snake location and terrain generation by pressing the reset button.</p>
+        <p>If trees are getting in your way, you can move around them, or left click on the base of the tree to cut a block.</p>
+        <p>The tree will shrink, and once it dissapears you are able to walk through that space. To grow a tree, right click on the base of an existing tree to increase its height.</p>
+        <p>I would say the WOW factor would be the random generation of the terrain, with collision and the ability to remove and grow trees.</p>
+    </div>
+    <hr>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Ellipsoid.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
